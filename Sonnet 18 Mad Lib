@@ -6,8 +6,8 @@ plural_noun = input("Enter a plural noun: ")
 #add variable =  string + variable name
 
 print("Sonnet 18 Mad Lib")
-print("Shall I compare thee to a " + noun)
-print("Thou art more lovely and more " + adjective)
+print("Shall I compare thee to a summer's" + noun)
+print("Thou art more lovely and more " + adjective +";")
 print("Rough " + plural_noun + "s")
 print("do shake the darling buds of May,")
 print("And summer's lease hath all too short a date:")
