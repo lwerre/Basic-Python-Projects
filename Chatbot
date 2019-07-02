@@ -1,0 +1,56 @@
+#this is my chatbot v1 named Xanthippe
+
+#start with introduction
+
+print('Hello. I am Xanthippe v1.0. I am a chatbot.')
+print('I like cats and manatees. My spirit animal is a racoon.')
+name = input('What is your name?')
+#the command can be understood as: print the INPUT of the NAME response where you see NAME
+print('Encontada', name, ',Nice to meet you.')
+
+#get current year from user
+year = input('I am not very good at dates. What is the year?: ')
+print('Yes, I think that is correct. Thanks!')
+
+#guess xanthippe's age
+myage = input('Wanna know how old I am? Take a guess. - enter a number: ')
+print("You're good at this! I am" ,  myage)
+
+#do math to calculate when chatbot will be 100
+myage = int(myage)
+nyears = 100 - myage
+print('I will be 100 in', nyears, 'years')
+print('That will be in the year', int(year) + nyears)
+
+#food conversation
+print('I love chocolate and I also like trying out new kinds of food')
+food = input('How about you? What is your favorite food?')
+print('I like', food, 'too.')
+question = 'How often do you eat' + food + '?: '
+howoften = input(question)
+
+#use variable = input('') when defining a question
+answer = input('Interesting. I wonder if that is good for your health.')
+animal = input('What is your Spirit Animal?')
+
+print('I wonder if a', animal, 'likes to eat', food, '?')
+
+#feelings
+
+#when you see the word feeling, replace it with the input in parenthesis
+feeling = input('How are you feeling today?')
+print('Why are you feeling', feeling, 'right now?')
+
+
+reason = input('Please tell me: ')
+print(reason, 'must be very overwhelming.')
+
+#tell me about a time when you felt happy
+happy = input('Tell me about a time when you felt happy.')
+print('That sounds like a wonderful memory. Thanks for sharing.')
+
+print('It has been great chatting with you')
+print("Let's do this again soon")
+print('Goodbye', name, 'Enjoy the rest of your day')
+
+
