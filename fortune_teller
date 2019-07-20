@@ -1,0 +1,31 @@
+#Madame Zorba's Fortune Teller
+
+import random
+import time
+
+print("Welcome to Madame Zorba's Fortune Teller \n")
+
+question = input("I will reveal your fortune for today. \n")
+time.sleep(1)
+
+color = input("Enter a color.")
+print("The color", color, " will help guide your fortune. \n")
+time.sleep(1)
+
+number = input("Type your favorite number. \n")
+print(number, "is a good choice. \n")
+
+another_number = input("Pick another number. \n")
+print (another_number, "should be lucky for you. \n")
+
+time.sleep(2)
+
+#functions as list
+fortunes = ["You will overpower any tiger that comes across your path",
+            "A secret admirer will soon send you a raspberri pi",
+            "The one you love worships Trump",
+            "Good things will happen when you take out the trash when it is full",
+            "If a black kitty crosses your path, you should keep it and name it Mike Wazowski",
+            "All of your hard work will pay off in mochi ice cream"
+            ]
+print(random.choice(fortunes))
