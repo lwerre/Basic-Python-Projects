@@ -1,0 +1,74 @@
+#Python Crash Course Chapter 4: lists -*- coding: utf-8 -*-
+"""
+Created on Wed Aug  7 17:32:31 2019
+
+@author: Lynn
+"""
+
+#practice lists
+#to be read list
+
+#define list
+books = ['Station Eleven', 
+         'Furiously Happy', 
+         'The Night Circus']
+print(books)
+#how to print it in list form withouth coding format
+
+#update the list by adding a reason that I want to read each book
+message = books[0].title() + " is a post-apocalyptic book about traveling bards."
+print(message)
+
+message_1 = books[1].title() + " is a memoir about a woman battling anxiety and depression."
+print(message_1)
+
+message_2 = books[2].title() + " is about twwo young magicians who are unknowingly raised to battle each other to the death."
+print(message_2)
+
+#modify list by removing the first book and printing a reason it was removed
+not_reading = 'Station Eleven'
+books.remove(not_reading)
+print(books)
+print(not_reading.title() + " is out of stock at the bookstore.")
+
+#modify list: reprint original list
+books = ['Station Eleven',
+         'Furiously Happy',
+         'The Night Circus']
+print(books)
+
+#modify list: replace Station Eleven with a different title
+books[0] = 'The Broken Earth'
+print(books)
+
+#print a message about each book
+message = "I look forward to reading " + books[0].title() + "."
+print(message)
+
+message_1 = books[1].title() + " looks like a really interesting read."
+print(message_1)
+
+message_2 = "I can't wait to see what happens in " + books[2].title() + "."
+print(message_2)
+
+#add two more books to the list
+books.append('The Ghost Bride')
+print(books)
+
+books.append('The Adventures of Kavalier and Klay')
+print(books)
+
+#add a new message for the new books
+message_3 = "I think " + books[3].title() + " sounds fascinating."
+print(message_3)
+
+message_4 = books[4].title() + " is said to be a fun adventure."
+print(message_4)
+
+#use insert to add a book to the beginning of the list (0)
+books.insert(0, 'The Obelisk Gate')
+print(books)
+
+#use insert to add a book to the second place in the list
+books.insert(1, 'The Zookeepers Wife')
+print(books)
