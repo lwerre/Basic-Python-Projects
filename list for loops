@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug  8 01:32:12 2019
+
+@author: Lynn
+"""
+
+#Python Crash Course Chapter 4: for loops in lists
+#20190808
+
+#based on exercise 4.1 but substituted books for pizzas
+books = ['Station Eleven', 'The Obelisk Gate', 'Furiously Happy']
+for book in books:
+    print(book.title() + " is a fascinating book.")
+    print("I can't wait to read more from the author who wrote " + book.title() + ".\n")
+    
+    print("I would recommend this books to everybody.")
+    
