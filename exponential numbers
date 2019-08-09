@@ -1,0 +1,39 @@
+#20190809
+#Python Crash Course Chapter 4: list of square numbers; ** = exponents
+#put first 10 square numbers into a list
+squares = [] #begin with empty list
+for value in range(1, 11): #tell python to loop each value from 1-10 using range()
+    square = value**2 #current value is raised to the second power
+    squares.append(square) #each new value of the square is added to the list
+print(squares)
+
+#another way to write this code is: squares = [] / for value in range (1, 11): / squares.append(value**2)
+
+#list comprehension combines for loop with element creations in one line of code
+squares = [value**2 for value in range(1,11)]
+print(squares)
+
+cubed = [value**3 for value in range(1,11)]
+print(cubed)
+
+#Python Crash Course exercise 4.3: counting to twenty 
+numbers = list(range(1,21))
+print(numbers)
+
+#for loop to print numbers 1-20, inclusive
+numbers = []
+for value in range(1,21):
+    number = value **1
+    numbers.append(number)
+print(numbers)
+
+#Python Crash Course 4.7: make a list of multiples of 3 from 3-30. Use a for loop to print numbers on list
+threes = []
+for value in range(3,31):
+    three = value**3
+    threes.append(three)
+print(threes)
+
+#Python Crash Course 4.9: use a list comprehension to generate a list of the first 10 cubes
+cubes = [value**4 for value in range(1,11)]
+print(cubes)
