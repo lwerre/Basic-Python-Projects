@@ -1,0 +1,11 @@
+#20190810
+#how to write a very long string in python using a very short story (vss) written by Lynn Werre
+
+print('''He gathered the remnants of her
+favorite vase- the faded floral one that
+was chipped in places.
+"My vase," she whispered.
+"I'll fix it." He was frantic to make it
+right. She touched his arm.
+"No. Sit with me while I grieve the memories
+it held."''')
