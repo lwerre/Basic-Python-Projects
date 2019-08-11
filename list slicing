@@ -1,0 +1,31 @@
+#20190811
+#Python Crash Course: Chapter 4 Lists pg. 65/Slicing
+
+#create list
+books = ['Station Eleven',
+         'Furiously Happy',
+         'The Night Circus',
+         'The Ghost Bride',
+         'The Obelisk Gate']
+print(books)
+
+#print as unnumbered list
+print(*books, sep = '\n')
+
+#identify range of items to be slice. Here I will print the first three books on the list
+print(books[0:3])
+
+#print first three elements of list as unnumbered list
+print(*books[0:3], sep = '\n')
+
+#slice second, third and fourth items in a list
+print(books[1:4])
+
+#python automatically starts slice at the beginning of list if the first index is left out
+print(books[:6])
+
+#to print an index through the last item, leave off the final index in range but enter the starting index
+print(books[2:])
+
+#print slice as unnumbered list
+print(*books[2:], sep = '\n')
