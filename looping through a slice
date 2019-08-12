@@ -1,0 +1,23 @@
+#20190812
+#Python Crash Course Chapter 4 page 66: looping through a list
+#loop through a set group of elements in a list
+books = ['Station Eleven',
+         'Furiously Happy',
+         'The Night Circus',
+         'The Obelisk Gate',
+         'The True Adventures of Kavalier and Klay']
+
+print("These are the first three books on my to-read list:")
+#create a for loop for book titles UP TO but not including the third book
+for book in books[:3]:
+    print(book.title())
+#only the first three book titles will print
+    
+print("These are the middle three books on my to-read list:")
+for book in books[1:4]:
+    print(book.title())
+
+print("These are the last three books on my to-read list:")
+for book in books[2:5]:
+    print(book.title())
+        
