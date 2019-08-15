@@ -1,0 +1,25 @@
+#20190815
+#Python Crash Course Chapter 4: Copying a list page 67
+
+#create initial list
+my_foods = ['ice cream', 'pie', 'cheeseburgers']
+
+
+#name new list and copy items from first list [:]
+friend_foods = my_foods[:]
+
+print("My favorite foods are: ")
+print(my_foods)
+
+print("\nMy friend's favorite foods are: ")
+print(friend_foods)
+
+#to make changes to each list to demonstrate each one is different
+my_foods.append('cannoli')
+friend_foods.append('cheesecake')
+
+print("My favorite foods are: ")
+print(my_foods)
+
+print("\nMy friend's favorite foods are: ")
+print(friend_foods)
