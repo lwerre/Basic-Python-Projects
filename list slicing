@@ -1,5 +1,6 @@
 #20190811
 #Python Crash Course: Chapter 4 Lists pg. 65/Slicing
+#20190816 cleaned up lists to include descriptions before each slice and have each slice print as an unnumbered list
 
 #create list
 books = ['Station Eleven',
@@ -7,25 +8,26 @@ books = ['Station Eleven',
          'The Night Circus',
          'The Ghost Bride',
          'The Obelisk Gate']
-print(books)
+#print(books)--->I don't want the list to print in this format
 
 #print as unnumbered list
+print("Here is a list of books I want to read: ")
 print(*books, sep = '\n')
 
-#identify range of items to be slice. Here I will print the first three books on the list
-print(books[0:3])
-
-#print first three elements of list as unnumbered list
+#identify range of items to be slice. Here I will print the first three books in an unnumbered list format
+print("The first three books on my to-read list are: ")
 print(*books[0:3], sep = '\n')
 
 #slice second, third and fourth items in a list
-print(books[1:4])
+print("Here are the middle three books on my to-read list: ")
+print(*books[1:4], sep = '\n')
 
 #python automatically starts slice at the beginning of list if the first index is left out
-print(books[:6])
+print("Python automatically starts the slice at the beginning of the list if the first index is left out: ")
+print(*books[:6], sep = '\n')
 
 #to print an index through the last item, leave off the final index in range but enter the starting index
-print(books[2:])
-
-#print slice as unnumbered list
+print("Python will print the third through the last item if the final index in range is left out: "
 print(*books[2:], sep = '\n')
+
+#need to figure out how to create spaces between each list
