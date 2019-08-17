@@ -1,0 +1,14 @@
+#20190817
+#Python Crash Course Chapter 4: Tuples page 69
+
+#tuples allow for creating alist of items that CANNOT change (immutable = tuple)
+#the difference between a tuple and a list is the use of () instead of []
+#create a rectangle that doesn't change size
+dimensions = (200, 50)
+print(dimensions[0]) #200
+print(dimensions[1]) #50
+
+#loop values in a tuple using a for loop
+dimensions = (200, 50)
+for dimension in dimensions: 
+    print(dimension) #python will print dimensions in a tuple, like it would for a list
