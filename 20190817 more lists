@@ -1,0 +1,8 @@
+#20190818
+#Beginner Python page 34
+#creating lists from a string
+
+#strings can't be modified. To modify a string, recreate it as a list()
+list('Pumpkin')
+print(list('Pumpkin')) #will print each letter in the word 'pumpkin' individually as a list
+
