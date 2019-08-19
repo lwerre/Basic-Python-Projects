@@ -1,0 +1,25 @@
+#20190819
+#Python Crash Course Chapter 4: Tuples page 71 exercise 4-13
+
+#list five favorite books and store them as a TUPLE
+books = ('The Thirteenth Tale', 
+         'The Girl with All the Gifts',
+         'A Hundred Thousand Kingdoms',
+         'Beneath a Marble Sky',
+         'When You Reach Me')
+#REMEMBER tuples are used when you want to store a set of values that cannot be changed throughout the life of the program
+
+#use a FOR LOOP to print each of the books in the book list
+for book in books:
+    print(book)
+    
+#to make changes to a tuple, rewrite the tuple. Replace two of the books on the list and print each item on the revised menu
+
+books = ('The Alchemist',
+         'One Hundred Years of Solitude',
+         'A Hundred Thousand Kingdoms',
+         'Beneath a Marble Sky',
+         'When You Reach Me')
+print("\nModified books:")
+for book in books:
+    print(book)
