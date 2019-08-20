@@ -1,0 +1,14 @@
+#2190820 Python Crash Course Chapter 5 If Statements page 76
+cars = ['audi',
+        'bmw',
+        'subaru',
+        'toyota']
+
+#add for loop to define 'car'
+for car in cars:
+#use an if statement to make sure bmw is printed in all caps everytime it occus
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+        #all OTHER cars will not print in all caps. Remember the .title() tag will print the first letter of each car in CAPITAL LETTERS
