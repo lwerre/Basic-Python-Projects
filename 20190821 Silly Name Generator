@@ -1,0 +1,42 @@
+#20190821
+#Impractical Python Projects Chapter 1 Page 2
+#Silly Name Generator
+
+#load a list of first names, load list of surnames, choose first name at random, choose a surname at random, assign the name to a variable, print the names to the screen in order in RED FONT, ask the user to quit or play again; if player plays again, repeat; else user squits
+
+import sys
+import random
+
+print('Welcome to the Psych "Sidekick Name Picker."\n')
+print('A name just like Sean would pick for Gus:\n\n')
+
+first = (
+        'Baby Oil',
+        'Bad News',
+        'Big Burps',
+        'Bowel Noises',
+        'Boxelder'
+        )
+
+last = (
+        'Appleyard',
+        'Bigmeat', 
+        'Bloomshine',
+        'Boogerbottom',
+        'Breedslovetrout'
+        )
+
+while True:
+    firstName = random.choice(first)
+    
+    lastName = random.choice(last)
+    
+    print('\n\n')
+    print('{}{}'.format(firstName, lastName), file=sys.stderr)
+    print('\n\n')
+
+try_again = input('\n\nTry again? (Press Enter else n to quit)\n')
+if try_again.lower() == 'n':
+    break
+#line 46 returns error: 'break outside of loop'
+input('\nPress Enter to exit.')
