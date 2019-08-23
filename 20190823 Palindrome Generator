@@ -1,0 +1,8 @@
+#20190823
+#Palindrome Creator from w3resource.com
+
+word = input('Enter a word to be reversed')
+
+word = input()
+list_word = list(reversed(word))
+print("".join(list_word))
