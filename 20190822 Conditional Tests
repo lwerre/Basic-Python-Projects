@@ -1,0 +1,6 @@
+#20190822
+#Python Crash Course Chapter 5 page 76 Conditional Tests: Checking for Equality
+
+car = 'audi' #single equal sign assigns the value
+car == 'bmw' #double equal sign checks whether the value of car is bmw
+#should return True
