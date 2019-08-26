@@ -1,0 +1,33 @@
+#20190826 creating a list and determining current age from stored information
+
+#define child birth year
+Ariadne = int(2001)
+Ophelia = int(2002)
+Esme = int(2008)
+Seraphina = int(2012)
+
+#subtract birth year (name) from 2019
+
+Ariadne_current_age = 2019 - (int(2001))
+Ophelia_current_age = 2019 - (int(2002))
+Esme_current_age = 2019 - (int(2008))
+Seraphina_current_age = 2019 - (int(2012))
+
+#how old are my kids
+print("Choose the name of a child in the Werre Household: Ariadne, Ophelia, Esme or Seraphina")
+name = input("Input the name of the child whose age you would like to know\n")
+
+if name == "Ariadne":
+    print("Ariadne is", Ariadne_current_age, "years old.")
+
+elif name == "Ophelia":
+    print("Ophelia is", Ophelia_current_age, "years old.")
+
+elif name == "Esme":
+    print("Esme is", Esme_current_age, "years old.")
+
+elif name == "Seraphina":
+    print("Seraphina is", Seraphina_current_age, "years old.")
+
+else:
+    print("No one lives here by that name.")
