@@ -17,6 +17,7 @@ Seraphina_current_age = 2019 - (int(2012))
 print("Choose the name of a child in the Werre Household: Ariadne, Ophelia, Esme or Seraphina")
 name = input("Input the name of the child whose age you would like to know\n")
 
+#how to accept input in lowercase
 if name == "Ariadne":
     print("Ariadne is", Ariadne_current_age, "years old.")
 
