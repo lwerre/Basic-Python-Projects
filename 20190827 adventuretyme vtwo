@@ -1,0 +1,86 @@
+# adventure tyme
+import random
+import time
+import sys
+
+print('Welcome to the FishHawk Ranch Adventure Game')
+
+print('*****************************************')
+
+print('You are visiting FishHawk Ranch, Florida \n')
+
+print('You go on an evening hike alone on a neighborhood trail. \n')
+
+print('You can pick one item to take with you- \n')
+
+print('a map (m), a flashlight (f), chocolate (c), a rope (r), or sticks (s): ')
+
+item = input('What do you choose?: ')
+
+print('You hear a loud humming sound.')
+
+choice1 = input('Do you follow the sound? Enter yes or no: ')
+
+if choice1 == 'yes':
+    print('You move towards the sound.')
+    print('It stops suddenly.')
+    print('You look around and realize you are LOST!')
+    print('You try to look at the map on your phone, but there is no signal.')
+else:
+    print('Good idea. You are being cautious.')
+    print('You continue walking.')
+    print('You realize you are LOST.')
+    print('The sound is louder and it is right behind you. You panic!')
+
+action = input('Do you start running (run), try to make a call (call)?:')
+if action == 'call':
+    print('There is still no signal. The call cannot go through.')
+    print('You are running fast. The sound is closer and louder.')
+    print('A woman on an electric scooter comes up behind you.')
+answer = input('She says, "Name my favorite programming language.": ')
+
+if answer == 'python':
+    print('She says, "Yes. Python is my favorite programming language." ')
+    print(' "If you have some chocolate, I can help you." ')
+#need to enter if == 'chocolate' choice else 'I can't help you'
+
+else:
+    print("I'm sorry, that is the wrong answer. I can't help you. Game over.")
+    #game continues regardless of language chosen. How do I end the game on wrong answer?
+ 
+
+#how do I stop the narration at this point; the game is over if any answer other than python is entered
+
+# add a choice of direction using a nested loop
+direction = input('Which direction do you run in? north, south, east, or west?: ')
+if direction == 'north':
+    print('You reach an abandoned cabin. ')
+    if item == 'm':
+        print('You use the map and find your way home.')
+        print('Congratulations! You won the game! ')
+    else:
+        print('If you had a map, you could find your way from here. ')
+        print('---You are still lost. Game over. --- ')
+elif direction == 'south':
+    print('You reach a river with a broken bridge. ')
+    if item == 'r' or item == 's':
+        print('You chose an item that can fix the bridge.')
+        print('You fix the bridge, cross over, and find your way home. ')
+        print('CONGRATULATIONS! You won the game!')
+    else:
+        print('If you had a rope or a stick, you could fix the bridge.')
+        print('---You are still lost. Game over.')
+elif direction == 'west':
+    print('You are walking and trip over a fallen log.')
+    print('You have hurt your foot. You sit down and wait for help.')
+    print('This could be a long time. You are still lost.')
+    print('---Game Over---')
+else:
+    print('You reach the side of the highway. It is dark.')
+if item == 'f':
+    print('You use the flashlight to signal.')
+    print('A car stops and gives you a ride home. ')
+    print('CONGRATULATIONS! You got out safely. You won the game. ')
+else:
+    print('If you had a flashlight, you could signal for help.')
+    print('---You are still lost. Game over.---')
