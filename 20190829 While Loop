@@ -1,0 +1,7 @@
+#20190829 Python Crash Course Chapter 7: While loops, page 122
+
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1 #python starts at 1, then adds 1 until it reaches five. When it reaches five, the loop stops
+#+= means to take the current number and add one to it to get the next number
