@@ -1,0 +1,15 @@
+#20190830 Python Crash Course Chapter 7: allowing user to quit a while loop
+
+#letting the user choose when to quit by defining a quit value
+prompt = "\nTell me something, and I will repeat it back to you:"
+prompt += "\nEnter 'quit' to end the program."
+#message ""value will loop whatever the user enters
+message = " "
+
+#following while loop runs as long as the message entered is not 'quit'
+while message != 'quit':
+    message = input(prompt)
+   
+    #prints the quit message at this point. Add an if test to fix.
+    if message != 'quit':
+        print(message)
