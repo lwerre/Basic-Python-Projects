@@ -13,3 +13,4 @@ while message != 'quit':
     #prints the quit message at this point. Add an if test to fix.
     if message != 'quit':
         print(message)
+        #program should end at this point and not print 'quit'
