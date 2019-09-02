@@ -1,0 +1,16 @@
+#20190901 Python Crash Course Chapter 7: using break to exit a loop (page 125)
+
+#a break statements ends a while loop immediately without running remaining code
+#run prompt, return input
+prompt = "\nPlease enter the name of your favorite book:"
+prompt += "\n(Enter 'quit' when you wish to end the program.)"
+#make sure you use + (plus) and = (equal) as operands, not + (plus) and  -(minus)!!!
+
+#create a while loop
+while True:
+    book = input(prompt)
+    
+    if book == 'quit':
+        break
+    else:
+        print("I'd love to read " + book.title() + "!")
