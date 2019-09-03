@@ -1,0 +1,11 @@
+#20190902 Python Crash Course: Chapter 7 Using continue in a loop page 126
+#return to the beginning of a loop based on the result of a conditional test
+
+#begin the count at 0
+current_number = 0
+while current_number < 10:
+    current_number += 1 #add to the resulting number in incriments of one
+    if current_number % 2 == 0: #if the current number is divisible by 2, python will ignore it and continue to execute
+        continue
+    
+    print(current_number) #this will print ONLY the odd numbers up until 10
