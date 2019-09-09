@@ -1,0 +1,23 @@
+#20190909 Python Crash Course Chapter 7 page 128
+
+#separate unverified users from list of users. Start with users that need to be verified. 
+
+unconfirmed_users = ['alice', 'brian', 'candace']
+#create an empty list to hold confirmed users
+confirmed_users = []
+
+#verify each user into the list until there are no  more uncomfirmed users
+#move each verified user into the list of confirmed users
+
+while unconfirmed_users :
+    current_user = unconfirmed_users.pop()
+    #the while loop runs as long as the unconfirmed_users list has names in it
+    #pop function removes unverified users one at a time from the end of unconfirmed_users
+    
+    print("Verifying user: " + current_user.title())
+    confirmed_users.append(current_user)
+    
+#display all the confirmed users
+print("\nThe following users have been confirmed:")
+for confirmed_user in confirmed_users:
+    print(confirmed_user.title())
