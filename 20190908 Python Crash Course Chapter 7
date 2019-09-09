@@ -1,0 +1,13 @@
+#20190908 Python Crash Course Chapter 7: pizza toppings loop exercise p. 127
+
+prompt = "\nWhat kind of toppings would you like on your pizza?"
+prompt += "\nEnter quit to end the list."
+
+while True:
+    pizza = input(prompt)
+    
+    if pizza == 'quit':
+        break
+    else:
+        print(pizza.title() + "  will be added to your pizza.")
+        #the spacing between the pizza topping and "will be added..." is weird. Will revisit in the morning to fix.
