@@ -1,0 +1,14 @@
+#20190909 based off of confirmed_users.py exercise on page 128
+#moving books from to-be-read list to completed list
+tbr_books = ['Station Eleven', 'The Boy on the Bridge', 'Thirteenth Tale']
+completed_books = []
+
+while tbr_books:
+    current_book = tbr_books.pop()
+    print("\nI want to read: " + current_book.title())
+    completed_books.append(current_book)
+    
+print("\nI have finished reading: ")
+for current_book in completed_books:
+    print(current_book.title())
+   
