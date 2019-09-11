@@ -1,0 +1,25 @@
+import random
+import time
+
+print("Answer a few questions and I will suggest a book for you to read.")
+
+category = input("Would you like to read fiction or non-fiction?")
+
+#if input = fiction, program to choose a book at random from list 'fiction' (random.choice(fiction))
+if category = fiction
+
+#else random.choice(non-fiction)
+
+fiction = [
+        'The Book of M',
+        'The Eleventh Station',
+        'The Fifth Season',
+        'Disc World'
+        ]
+
+#add non-fiction titles
+non-fiction = [
+        'Flow',
+        'Daring Greatly',
+        'Lost Books of the Bible'
+        
