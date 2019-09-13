@@ -1,0 +1,19 @@
+#20190913 Python Crash Course Chapter 7: Removing instances of specific values from list page 129
+
+
+pets = ['dog', 'cat', 'dog', 'goldfish', 'wallaby', 'cat', 'rabbit', 'cat']
+print(pets)
+
+#to remove a value (cat) that occurs multiple times in a list, run a while loop
+
+while 'cat' in pets:
+    pets.remove('cat')
+
+print(pets)
+
+#do it again to remove multiple occurances of dog
+
+while 'dog' in pets:
+    pets.remove('dog')
+    
+print(pets)
