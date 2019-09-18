@@ -1,0 +1,27 @@
+#20190917 Python Crash Course Chapter 7: Filling a dictionary with user input page 130
+
+#first, define an empty dictionary (call it 'responses')
+responses = {}
+
+#set a flag to indicate that the polling is active
+polling_active = True
+
+while polling_active:
+    #prompt for user's name and response; make sure to indent
+    name = input("\nWhat is your name? ")
+    response = input("Which mountain would you like to climb someday?")
+
+#store the response in the dictionary, responses = {}
+responses[name] = response
+#could be read as, in the dictionary named responses, make entry "name" equal the response input
+#is anyone else going to take the poll? 
+repeat = input("Would you like to have another person take the poll?" + "(yes/no) ")
+#spyder 3 is not running while loop. Will troubleshoot tomorrow.
+
+while repeat == 'no':
+    polling_active = False
+
+#if False, polling is complete, show results
+print("\n--- Poll Results ---")
+for name, response in responses.items():
+    print(name + "would like to climb " + response + ".")
