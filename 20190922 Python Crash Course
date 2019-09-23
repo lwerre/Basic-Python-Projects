@@ -1,0 +1,16 @@
+#20190922 Python Crash Course Chapter 8: Functions page 134
+#how to print a function named greet_user
+def greet_user():
+    """Display a simple greeting."""
+    #use three quotation marks to create a DOCSTRING, which describes what the function does
+    print("Hello!")
+
+ #to call a function, write the name of the function, followed by necessary info in parenthesis
+greet_user()
+
+#greet a user by name (passing information to a function)
+def greet_user(username):
+    """Display a simple greeting."""
+    print("Hello, " + username.title() + "!")
+
+greet_user('Ramona')
