@@ -1,0 +1,17 @@
+# PCC moving items from one list to another page 128: to read books
+
+# create a list of books that i want to read and an empty list to hold read books
+to_read = ['The Book of M', 'Finding Your Flow', 'Station Eleven']
+read = []
+
+# move each book into the read list
+while to_read:
+    now_reading = to_read.pop()
+
+    print("Lynn wants to read " + now_reading.title())
+    read.append(now_reading)
+
+# now display books that Lynn has completed reading
+print("\nLynn has read the following books: ")
+for now_reading in read:
+    print(now_reading.title())
