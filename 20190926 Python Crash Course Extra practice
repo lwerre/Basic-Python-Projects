@@ -1,0 +1,16 @@
+#20190926 Python Crash Course Chapter 8: review calling a function page 136
+
+def movie_title():
+    """Name a favorite movie."""
+    print("I love this movie!")
+
+movie_title()
+
+
+# pass information (titlename) to function (movie_title)
+def movie_title(titlename):
+    """Name a favorite movie."""
+    print(titlename.title() + " is my favorite movie!")
+
+#WATCH YOUR INDENTATIONS!!!!
+movie_title('10 Things I Hate About You')
