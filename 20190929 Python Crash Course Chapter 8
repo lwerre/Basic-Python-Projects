@@ -1,0 +1,21 @@
+#20190929 Python Crash Course Chapter 8: page 134 continued
+
+def movie_title(titlename):
+    """Name a favorite movie."""
+    print("I love watching the movie " + titlename.title())
+
+#WATCH YOUR INDENTATIONS!!!!
+movie_title('10 Things I Hate About You')
+
+#pass another function with the title of a different movie
+movie_title('How to Lose a Guy in 10 Days')
+
+movie_title('Meet the Robinsons')
+
+#pass horror movie titles to a function
+def horror_movie(titlename):
+    """Name a horror movie."""
+    print(titlename.title() + " is a scary movie!")
+
+horror_movie('Drag Me to Hell')
+horror_movie('Constantine')
