@@ -1,0 +1,11 @@
+#20190930 Python Crash Course Chapter 8: Positional Arguments page 136
+
+#this positional argument is based on a function that displays information about type and name
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet, including type and name."""
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+#now pass the information to the function in the order they appear
+
+describe_pet('hamster', 'harry')
