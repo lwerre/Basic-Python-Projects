@@ -1,0 +1,10 @@
+#20191003 Python Crash Course Chapter 8 page 139: more positional function calls
+
+#exercise 8-3
+def make_shirt(size, message):
+    """Display the size of the shirt and message you want displayed on it"""
+    print("\nI would like a " + size + " shirt.")
+    print("I would like the shirt to say " + message +  ".")
+
+make_shirt('small', 'be kind')
+make_shirt("large", "world's okayest programmer")
