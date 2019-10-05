@@ -1,0 +1,24 @@
+#20191005 Python Crash Course Chapter 8 page 142 returning a simple value
+
+#create a function that takes a first and last name and returns a neatly formatted full name
+
+def get_formatted_name(first_name, last_name):
+    """Return a neatly formatted full name"""
+    full_name = first_name + ' ' + last_name
+    return full_name.title()
+
+#output is a descriptor of person whose name is being formatted
+musician = get_formatted_name('gavin', 'rossdale')
+print(musician)
+
+author = get_formatted_name('ernest', 'hemingway')
+print(author)
+
+artist = get_formatted_name('vincent', 'van gogh')
+print(artist)
+
+architect = get_formatted_name('frank lloyd', 'wright')
+print(architect)
+
+mathemetician = get_formatted_name('ada', 'lovelace')
+print(mathemetician)
