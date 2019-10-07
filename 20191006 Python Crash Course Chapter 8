@@ -1,0 +1,30 @@
+# 20191006 Python Crash Course Chapter 8 page 144: returning a dictionary
+
+# a function can return lists and dictionaries
+
+def build_person(first_name, last_name):
+    """return a dictionary of information about a person"""
+    # store the values of the first and last names
+    person = {'first': first_name, 'last': last_name}
+    return person
+
+musician = build_person('jimi', 'hendrix')
+print(musician)
+
+author = build_person('mary', 'shelley')
+print(author)
+
+artist = build_person('frida', 'kahlo')
+print(artist)
+
+mathemetician = build_person('ada', 'lovelace')
+print(mathemetician)
+
+scientist = build_person('marie', 'curie')
+print(scientist)
+
+journalist = build_person('christian', 'amanpour')
+print(journalist)
+
+programmer = build_person('lynn', 'werre')
+print(programmer)
